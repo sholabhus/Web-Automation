@@ -2,7 +2,7 @@ package pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-// alert page
+
 public class AlertPage {
 
     private WebDriver driver;
