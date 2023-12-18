@@ -111,9 +111,9 @@ public class HomePage {
         return new MultipleWindowsPage(driver);
     }
 
-   public DynamicLoadedPage clickDynamicLoaded(){
+   public DynamicLoadingPage clickDynamicLoaded(){
         driver.findElement(DynamicLoading).click();
-        return new DynamicLoadedPage(driver);
+        return new DynamicLoadingPage(driver);
    }
 }
 
