@@ -36,6 +36,11 @@ public class HomePage {
 
 
     private By DynamicLoading =By.xpath("//*[@id='content']/ul/li[14]/a");
+
+    private By Geolocation =By.linkText("Geolocation");
+
+    private By StatusCodes =By.linkText("Status Codes");
+
     public HomePage(WebDriver driver) {
 
         this.driver = driver;
@@ -114,6 +119,15 @@ public class HomePage {
    public DynamicLoadingPage clickDynamicLoaded(){
         driver.findElement(DynamicLoading).click();
         return new DynamicLoadingPage(driver);
+   }
+   public GeolocationPage clickGeolocationLink(){
+        driver.findElement(Geolocation).click();
+        return new GeolocationPage(driver);
+   }
+
+   public StatusCodesPage clickStatusCodes(){
+        driver.findElement(StatusCodes).click();
+        return new StatusCodesPage(driver);
    }
 }
 
